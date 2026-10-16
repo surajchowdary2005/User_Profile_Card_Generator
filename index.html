@@ -1,0 +1,47 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile Card Generator</h1>
+        <p>Create your personal profile in seconds!</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Create Your Profile</h2>
+
+            <form action="/create-profile" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio"
+                          placeholder="Tell us about yourself"
+                          rows="4" required></textarea>
+
+                <label for="skills">Skills</label>
+                <input type="text" id="skills" name="skills"
+                       placeholder="HTML, CSS, JavaScript" required>
+
+                <label for="social">Social Link</label>
+                <input type="url" id="social" name="social"
+                       placeholder="https://github.com/yourname">
+
+                <button type="submit">Generate Profile Card</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with Node.js and Express</p>
+    </footer>
+</body>
+</html>
